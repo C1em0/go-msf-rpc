@@ -241,6 +241,7 @@ func (msf *Metasploit) SessionExecute(session uint32, command string) (string, e
 	return data, nil
 }
 
+//列出会话传递给session命令
 func (msf *Metasploit) SessionExecuteList(session uint32, commands []string) (string, error) {
 	var results string
 	for _, command := range commands {
